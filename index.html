@@ -235,14 +235,14 @@ a,
             padding-left: 0rem !important;
           }
         #sobre .about-copy .text-size-regular {
-  line-height: 1.75;
+          line-height: 1.6;
+		  margin-bottom: 10px;
 }
-
-/* Telemóveis */
 @media screen and (max-width: 767px) {
   #sobre .home-about-block > .padding-horizontal {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    padding-left: clamp(40px, 10vw, 150px) !important;
+    padding-right: clamp(40px, 10vw, 150px) !important;
+    box-sizing: border-box;
   }
 
   #sobre .about-layout {
