@@ -37,6 +37,33 @@
   <body class="body">
     <div class="page-wrapper">
       <div class="global-styles w-embed">
+		  /* Margens da secção Sobre Mim */
+#sobre .home-about > .padding-horizontal {
+  padding-left: clamp(30px, 8vw, 130px) !important;
+  padding-right: clamp(30px, 8vw, 130px) !important;
+  box-sizing: border-box;
+}
+
+/* Espaçamento entre fotografia e texto */
+#sobre .about-layout {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: clamp(25px, 4vw, 60px);
+}
+
+/* Margens em telemóveis */
+@media screen and (max-width: 767px) {
+  #sobre .home-about > .padding-horizontal {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  #sobre .about-layout {
+    gap: 25px;
+  }
+}
         <style>
           /* Make text look crisper and more legible in all browsers */
           body {
