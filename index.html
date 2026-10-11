@@ -234,7 +234,62 @@ a,
             padding-right: 0rem !important;
             padding-left: 0rem !important;
           }
-        </style>
+        
+          /* Layout personalizado da secção Sobre Mim */
+          #sobre .home-about > .padding-horizontal {
+            padding-left: clamp(24px, 7vw, 110px);
+            padding-right: clamp(24px, 7vw, 110px);
+          }
+          #sobre .about-layout {
+            display: flex;
+            align-items: center;
+            gap: clamp(28px, 5vw, 76px);
+            width: 100%;
+            margin: 0 auto;
+          }
+          #sobre .about-photo-wrap {
+            flex: 0 0 40%;
+            min-width: 0;
+          }
+          #sobre .about-photo {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            object-position: center 35%;
+          }
+          #sobre .about-copy {
+            flex: 0 0 60%;
+            min-width: 0;
+          }
+          #sobre .about-copy .heading-style-h5 {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+          }
+          #sobre .about-copy .text-size-regular {
+            line-height: 1.75;
+          }
+          @media screen and (max-width: 767px) {
+            #sobre .home-about > .padding-horizontal {
+              padding-left: 22px;
+              padding-right: 22px;
+            }
+            #sobre .about-layout {
+              flex-direction: column;
+              align-items: stretch;
+              gap: 28px;
+            }
+            #sobre .about-photo-wrap,
+            #sobre .about-copy {
+              flex: 0 0 auto;
+              width: 100%;
+            }
+            #sobre .about-photo {
+              aspect-ratio: 4 / 3;
+              object-position: center 35%;
+            }
+          }
+</style>
       </div>
       <main class="main-wrapper">
         <div class="about-hero_navbar">
@@ -365,22 +420,25 @@ a,
                 <div class="padding-horizontal padding-medium">
                   <div class="home-about-top">
                     <div class="padding-vertical padding-small">
-                      <div class="home-about-intro">
-                        <div class="div-block-4">
-                          <h1 class="heading-style-h5">Sobre Mim</h1>
-                          <div class="text-size-regular">
-                            Me chamo Bruna Nascimento, sou natural do Rio de Janeiro e residente no Porto, Portugal, há
-                            12 anos. Sou técnica de multimédia especializada em
-                            motion design, 3D e experiências digitais interativas,
-                            dedicada a transformar ideias em soluções visuais memoráveis.<br />Trabalho desde
-                            animações e motion graphics
-                            até experiências digitais interativas inovadoras,
-                            sempre buscando criar experiências únicas e significativas.<br />Este portfólio apresenta
-                            uma seleção de trabalhos que refletem meu estilo e técnica, mostrando como é possível unir criatividade e funcionalidade para gerar soluções digitais
-                            que se destacam e agregam valor real para marcas, empresas e projetos criativos.
+                      <div class="home-about-intro about-layout">
+                          <div class="about-photo-wrap">
+                            <img src="images/FotoBruna.jpeg" loading="lazy" alt="Bruna Nascimento" class="about-photo" />
+                          </div>
+                          <div class="about-copy">
+                            <h1 class="heading-style-h5">Sobre Mim</h1>
+                            <div class="text-size-regular">
+                              Me chamo Bruna Nascimento, sou natural do Rio de Janeiro e residente no Porto, Portugal, há
+                              12 anos. Sou técnica de multimédia especializada em
+                              motion design, 3D e experiências digitais interativas,
+                              dedicada a transformar ideias em soluções visuais memoráveis.<br /><br />Trabalho desde
+                              animações e motion graphics
+                              até experiências digitais interativas inovadoras,
+                              sempre buscando criar experiências únicas e significativas.<br /><br />Este portfólio apresenta
+                              uma seleção de trabalhos que refletem meu estilo e técnica, mostrando como é possível unir criatividade e funcionalidade para gerar soluções digitais
+                              que se destacam e agregam valor real para marcas, empresas e projetos criativos.
+                            </div>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
