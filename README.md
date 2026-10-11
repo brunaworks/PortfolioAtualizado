@@ -7,4 +7,4 @@ Me chamo Bruna Nascimento, sou designer especializada em **motion design, 3D e e
 
 # Link para o site
 
-[Site portfolio](https://brunaworks.github.io/portfolio/)
+[Site portfolio](https://brunaworks.github.io/PortfolioAtualizado/)
